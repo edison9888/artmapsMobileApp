@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://iphone.svn.wordpress.org/trunk/horizon/post
+http://iphone.svn.wordpress.org
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7d847f7c-ffe1-4a24-85be-b788d016d96a
+
+HIEditPostViewController.h
+file
+
+
+
+add
+
+HIPostPreviewViewController.m
+file
+
+
+
+add
+
+HIPostsViewController.m
+file
+
+
+
+add
+
+HIEditPostViewController.m
+file
+
+
+
+add
+
+HIEditPostViewController.xib
+file
+
+
+
+add
+
+HIPostPreviewViewController.h
+file
+
+
+
+add
+
+HIPostsViewController.h
+file
+
+
+
+add
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/3615/tags/3.2/Vendor/AFNetworking
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3615/tags/3.2/Vendor/AFNetworking/LICENSE
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3615/tags/3.2/Vendor/AFNetworking/CHANGES
+END
+AFNetworking.podspec
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/3615/tags/3.2/Vendor/AFNetworking/AFNetworking.podspec
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3615/tags/3.2/Vendor/AFNetworking/README.md
+END

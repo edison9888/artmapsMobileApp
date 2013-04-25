@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle
+END
+ChildPane.plist
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/ChildPane.plist
+END
+InApp.plist
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/InApp.plist
+END
+littledot@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/littledot@2x.png
+END
+bigdot@2x.png
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/bigdot@2x.png
+END
+littledot.png
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/littledot.png
+END
+bigdot.png
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/bigdot.png
+END
+Root.plist
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/3615/tags/3.2/Vendor/InAppSettings/InAppSettingsTestApp/test_settings/Settings.bundle/Root.plist
+END

@@ -1,0 +1,83 @@
+10
+
+dir
+3615
+http://iphone.svn.wordpress.org/tags/3.2/Vendor
+http://iphone.svn.wordpress.org
+
+
+
+2012-10-09T17:04:52.448276Z
+3615
+koke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7d847f7c-ffe1-4a24-85be-b788d016d96a
+
+Reachability
+dir
+
+facebook-ios-sdk
+dir
+
+JSONKit
+dir
+
+xmlrpc
+dir
+
+InAppSettings
+dir
+
+KVO+Blocks
+dir
+
+libraries.txt
+file
+
+
+
+
+2012-10-10T11:54:16.000000Z
+318ad9c7873b16e85b76987fab018102
+2012-08-10T11:24:28.795887Z
+3349
+koke
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+883
+
+AFNetworking
+dir
+

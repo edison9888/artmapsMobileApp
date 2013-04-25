@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/3615/tags/3.2/WordPressApi
+END
+AFAuthenticationAlertView.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/3615/tags/3.2/WordPressApi/AFAuthenticationAlertView.h
+END
+AFXMLRPCClient.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3615/tags/3.2/WordPressApi/AFXMLRPCClient.h
+END
+AFAuthenticationAlertView.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/3615/tags/3.2/WordPressApi/AFAuthenticationAlertView.m
+END
+AFXMLRPCClient.m
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/3615/tags/3.2/WordPressApi/AFXMLRPCClient.m
+END
+WordPressComApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/3615/tags/3.2/WordPressApi/WordPressComApi.h
+END
+WordPressApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3615/tags/3.2/WordPressApi/WordPressApi.h
+END
+WordPressComApi.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/3615/tags/3.2/WordPressApi/WordPressComApi.m
+END
+WordPressApi.m
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/3615/tags/3.2/WordPressApi/WordPressApi.m
+END
