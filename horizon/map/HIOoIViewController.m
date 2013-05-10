@@ -53,6 +53,22 @@ const NSInteger DETAIL_OoIMETA_BUTTON_TAG = 1;
 #define MINIMUM_CLUSTER_LEVEL 419430
 #define LATITUDE_DELTA_OFFSET 10
 
+/*-(void)setLongPressRecognizer:(UILongPressGestureRecognizer *)newLongPressRecognizer {
+    
+    if (_longPressRecognizer != newLongPressRecognizer) {
+        
+        if (_longPressRecognizer != nil) {
+            [self removeGestureRecognizer:_longPressRecognizer];
+        }
+        
+        if (newLongPressRecognizer != nil) {
+            [self addGestureRecognizer:newLongPressRecognizer];
+        }
+        
+        _longPressRecognizer = newLongPressRecognizer;
+    }
+}*/
+
 
 #pragma mark initialization
 
@@ -262,16 +278,17 @@ const NSInteger DETAIL_OoIMETA_BUTTON_TAG = 1;
     }else {
         annotationView.annotation = annotation;
     }
-    
-    if ([MapHelper getMapZoomLevel:mapView] == MAX_GOOGLE_ZOOM_LEVEL - 1){
+
+    annotationView.canShowCallout = YES;
+    annotation.title = [NSString stringWithFormat:@"%@ : %d", [[[ExperienceConfigurer sharedInstance] currentExperience] getTitleForOoIList],[annotation nodeCount]];
+    /*if ([MapHelper getMapZoomLevel:mapView] == MAX_GOOGLE_ZOOM_LEVEL - 1){
         annotationView.canShowCallout = YES;
         annotation.title = [NSString stringWithFormat:@"%@ : %d", [[[ExperienceConfigurer sharedInstance] currentExperience] getTitleForOoIList],[annotation nodeCount]];
     }else {
         annotationView.canShowCallout = NO;
-    }
+    }*/
     
-    [annotationView setClusterText:
-     [NSString stringWithFormat:@"%i",[annotation nodeCount]]];
+    [annotationView setClusterText:[NSString stringWithFormat:@"%i",[annotation nodeCount]]];
     return annotationView;    
 }
 
@@ -309,6 +326,22 @@ const NSInteger DETAIL_OoIMETA_BUTTON_TAG = 1;
 }
 
 -(void)clusterAnnotationViewSelected:(REVClusterAnnotationView*)annotationView{
+    /*if (longPressRecognizer.state == UIGestureRecognizerStateBegan) {
+        
+        NSIndexPath *pressedIndexPath = [self.tableView indexPathForRowAtPoint:[longPressRecognizer locationInView:self.tableView]];
+    }*/
+    if ([MapHelper getMapZoomLevel:mapViewControl] < MAX_GOOGLE_ZOOM_LEVEL - 1){
+        CLLocationCoordinate2D centerCoordinate = [(REVClusterPin *)annotationView.annotation coordinate];
+        CLLocationDegrees newLatitudeDelta = mapViewControl.region.span.latitudeDelta/2.0;
+        CLLocationDegrees newLongitudeDelta = mapViewControl.region.span.longitudeDelta/2.0;
+        
+        //MKCoordinateSpan newSpan = MKCoordinateSpanMake(newLatitudeDelta, newLongitudeDelta);
+        //MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, newSpan);
+        //[mapViewControl setRegion:region animated:YES];
+    }
+}
+
+/*-(void)clusterAnnotationViewSelected:(REVClusterAnnotationView*)annotationView{
     if ([MapHelper getMapZoomLevel:mapViewControl] < MAX_GOOGLE_ZOOM_LEVEL - 1){
         CLLocationCoordinate2D centerCoordinate = [(REVClusterPin *)annotationView.annotation coordinate];
         CLLocationDegrees newLatitudeDelta = mapViewControl.region.span.latitudeDelta/2.0;
@@ -318,7 +351,7 @@ const NSInteger DETAIL_OoIMETA_BUTTON_TAG = 1;
         MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, newSpan);
         [mapViewControl setRegion:region animated:YES];
     }
-}
+}*/
 
 -(void)submitOoIMetaRequestForAnnotation:(OoILocation*)location{
     ooiMetaLoader.delegate = self;

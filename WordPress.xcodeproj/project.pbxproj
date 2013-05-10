@@ -363,11 +363,11 @@
 		5DEB6EF915B48404004E81F3 /* popover_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DEB6EF715B48404004E81F3 /* popover_arrow.png */; };
 		5DEB6EFA15B48404004E81F3 /* popover_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DEB6EF815B48404004E81F3 /* popover_bg.png */; };
 		63198D1116551C10002AA8F3 /* ExperienceSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 63198D1016551C10002AA8F3 /* ExperienceSelection.m */; };
+		635599BA1729695600F4752A /* tateLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 635599B91729695600F4752A /* tateLogo.png */; };
 		6391DD271667828200F904E7 /* MetaDataGLAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6391DD251667828200F904E7 /* MetaDataGLAViewController.m */; };
 		6391DD281667828200F904E7 /* MetaDataGLAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6391DD261667828200F904E7 /* MetaDataGLAViewController.xib */; };
 		6391DD2B1667880A00F904E7 /* OoIMetaGLA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6391DD2A1667880A00F904E7 /* OoIMetaGLA.m */; };
 		63B8570616356BEF00466EFB /* HIOoIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AF613816259AC800442DC5 /* HIOoIViewController.m */; };
-		63BBE06B1665099E00092AF3 /* tateLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 63BBE06A1665099E00092AF3 /* tateLogo.png */; };
 		63C15A8D165149EE00CDF48D /* ExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C15A8B165149EE00CDF48D /* ExperienceViewController.m */; };
 		63C15A8E165149EE00CDF48D /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C15A8C165149EE00CDF48D /* ExperienceViewController.xib */; };
 		6E05AEE411EE8C1B00237983 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E05AEE311EE8C1B00237983 /* Icon-Small-50.png */; };
@@ -1134,12 +1134,12 @@
 		5DEB6EF815B48404004E81F3 /* popover_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popover_bg.png; sourceTree = "<group>"; };
 		63198D0F16551C10002AA8F3 /* ExperienceSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceSelection.h; sourceTree = "<group>"; };
 		63198D1016551C10002AA8F3 /* ExperienceSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperienceSelection.m; sourceTree = "<group>"; };
+		635599B91729695600F4752A /* tateLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tateLogo.png; sourceTree = "<group>"; };
 		6391DD241667828200F904E7 /* MetaDataGLAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaDataGLAViewController.h; sourceTree = "<group>"; };
 		6391DD251667828200F904E7 /* MetaDataGLAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaDataGLAViewController.m; sourceTree = "<group>"; };
 		6391DD261667828200F904E7 /* MetaDataGLAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MetaDataGLAViewController.xib; sourceTree = "<group>"; };
 		6391DD291667880A00F904E7 /* OoIMetaGLA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OoIMetaGLA.h; sourceTree = "<group>"; };
 		6391DD2A1667880A00F904E7 /* OoIMetaGLA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OoIMetaGLA.m; sourceTree = "<group>"; };
-		63BBE06A1665099E00092AF3 /* tateLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tateLogo.png; path = ../../../../Documents/tateLogo.png; sourceTree = "<group>"; };
 		63C15A8A165149EE00CDF48D /* ExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceViewController.h; sourceTree = "<group>"; };
 		63C15A8B165149EE00CDF48D /* ExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperienceViewController.m; sourceTree = "<group>"; };
 		63C15A8C165149EE00CDF48D /* ExperienceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
@@ -2150,7 +2150,7 @@
 				48AF613316259AC800442DC5 /* cluster@2x.png */,
 				48AF613416259AC800442DC5 /* imagenotavailable.png */,
 				48AF613516259AC800442DC5 /* imagenotavailable@2x.png */,
-				63BBE06A1665099E00092AF3 /* tateLogo.png */,
+				635599B91729695600F4752A /* tateLogo.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -3765,8 +3765,8 @@
 				48AF618C16259AC800442DC5 /* MetaTableViewController.xib in Resources */,
 				48AF619316259AC800442DC5 /* HIEditPostViewController.xib in Resources */,
 				63C15A8E165149EE00CDF48D /* ExperienceViewController.xib in Resources */,
-				63BBE06B1665099E00092AF3 /* tateLogo.png in Resources */,
 				6391DD281667828200F904E7 /* MetaDataGLAViewController.xib in Resources */,
+				635599BA1729695600F4752A /* tateLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

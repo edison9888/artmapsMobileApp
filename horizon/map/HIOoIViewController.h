@@ -26,5 +26,6 @@
 @property (nonatomic, retain) IBOutlet REVClusterMapView *mapViewControl;
 @property (nonatomic, retain) NSMutableArray* existingObjectOfInterests;
 @property (nonatomic, retain) Blog *blog;
+//@property (nonatomic) UILongPressGestureRecognizer *longPressRecognizer;
 
 @end
