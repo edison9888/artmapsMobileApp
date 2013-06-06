@@ -370,6 +370,7 @@
 		63B8570616356BEF00466EFB /* HIOoIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AF613816259AC800442DC5 /* HIOoIViewController.m */; };
 		63C15A8D165149EE00CDF48D /* ExperienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C15A8B165149EE00CDF48D /* ExperienceViewController.m */; };
 		63C15A8E165149EE00CDF48D /* ExperienceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C15A8C165149EE00CDF48D /* ExperienceViewController.xib */; };
+		63EBBF70175E3FB000F9E4D6 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EBBF6F175E3FB000F9E4D6 /* libFlurry.a */; };
 		6E05AEE411EE8C1B00237983 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E05AEE311EE8C1B00237983 /* Icon-Small-50.png */; };
 		6E05AEE711EE8DDD00237983 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E05AEE611EE8DDD00237983 /* Icon-Small.png */; };
 		6E05AEF311EE8EF800237983 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E05AEF211EE8EF800237983 /* Icon-Small@2x.png */; };
@@ -1143,6 +1144,8 @@
 		63C15A8A165149EE00CDF48D /* ExperienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExperienceViewController.h; sourceTree = "<group>"; };
 		63C15A8B165149EE00CDF48D /* ExperienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExperienceViewController.m; sourceTree = "<group>"; };
 		63C15A8C165149EE00CDF48D /* ExperienceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExperienceViewController.xib; sourceTree = "<group>"; };
+		63EBBF6E175E3FB000F9E4D6 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		63EBBF6F175E3FB000F9E4D6 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry.a; path = Flurry/libFlurry.a; sourceTree = "<group>"; };
 		6E05AEE311EE8C1B00237983 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		6E05AEE611EE8DDD00237983 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		6E05AEF211EE8EF800237983 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
@@ -1659,6 +1662,7 @@
 				FD3D6D2C1349F5D30061136A /* ImageIO.framework in Frameworks */,
 				E10B3664158F3B9500419A93 /* CrashReporter.framework in Frameworks */,
 				CCDCBC211590BF2A0040B3B1 /* libfacebook_ios_sdk.a in Frameworks */,
+				63EBBF70175E3FB000F9E4D6 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,6 +1733,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				63EBBF6D175E3FB000F9E4D6 /* Flurry */,
 				48AF60F116259AC800442DC5 /* horizon */,
 				E1895ECB1607272B007E6DD5 /* Default-568h@2x.png */,
 				5D63449E159A4B0E00AF402F /* Deprecated */,
@@ -1805,6 +1810,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				FD3D6D2B1349F5D30061136A /* ImageIO.framework */,
 				FD21397E13128C5300099582 /* libiconv.dylib */,
+				63EBBF6F175E3FB000F9E4D6 /* libFlurry.a */,
 				E19DF740141F7BDD000002F3 /* libz.dylib */,
 				83F3E25F11275E07004CD686 /* MapKit.framework */,
 				83FB4D3E122C38F700DB9506 /* MediaPlayer.framework */,
@@ -2375,6 +2381,14 @@
 				5DD8A70215A63F4700A673A4 /* wp_logo@2x.png */,
 			);
 			name = Welcome;
+			sourceTree = "<group>";
+		};
+		63EBBF6D175E3FB000F9E4D6 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				63EBBF6E175E3FB000F9E4D6 /* Flurry.h */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		8320B5CF11FCA3EA00607422 /* Cells */ = {
@@ -4109,6 +4123,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Flurry\"",
 				);
 				OTHER_CFLAGS = (
 					"-Wno-format-security",
@@ -4116,7 +4131,7 @@
 					"-Wno-format",
 				);
 				PRODUCT_NAME = WordPress;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B320125A-35BD-4965-9743-9314E4C34471";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -4126,7 +4141,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mixed Reality Lab, University of Nottingham";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lavdrus Ibrani (UZ862366U4)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4143,13 +4158,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Flurry\"",
 				);
 				OTHER_CFLAGS = (
 					"-Wno-format-security",
 					"-Wno-format",
 				);
 				PRODUCT_NAME = WordPress;
-				PROVISIONING_PROFILE = "512AAFCE-9C0B-458F-852E-BD658316289D";
+				PROVISIONING_PROFILE = "B320125A-35BD-4965-9743-9314E4C34471";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -4180,7 +4196,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mixed Reality Lab, University of Nottingham";
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lavdrus Ibrani (UZ862366U4)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4198,13 +4215,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Flurry\"",
 				);
 				OTHER_CFLAGS = (
 					"-Wno-format",
 					"-Wno-format-security",
 				);
 				PRODUCT_NAME = WordPress;
-				PROVISIONING_PROFILE = "512AAFCE-9C0B-458F-852E-BD658316289D";
+				PROVISIONING_PROFILE = "B320125A-35BD-4965-9743-9314E4C34471";
 				STRIP_INSTALLED_PRODUCT = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4258,9 +4276,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Vendor/facebook-ios-sdk\"",
+					"\"$(SRCROOT)/Flurry\"",
 				);
 				PRODUCT_NAME = WordPress;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B320125A-35BD-4965-9743-9314E4C34471";
 				STRIP_INSTALLED_PRODUCT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

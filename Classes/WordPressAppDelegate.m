@@ -11,6 +11,7 @@
 #import "CameraPlusPickerManager.h"
 #import "PanelNavigationController.h"
 #import "SidebarViewController.h"
+#import "Flurry.h"
 
 @interface WordPressAppDelegate (Private)
 - (void)setAppBadge;
@@ -120,12 +121,19 @@ static WordPressAppDelegate *wordPressApp = NULL;
     
     return wordPressApp;
 }
-
+void uncaughtExceptionHandler(NSException *exception)
+{
+    [Flurry logError:@"Uncaught" message:@"Crash!" exception:exception];
+}
 
 #pragma mark -
 #pragma mark UIApplicationDelegate Methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+
+    [Flurry startSession:@"Y9X2WP43NCBZN87PC24K"];
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+
 
 #ifdef DEBUG
     WPFLog(@"Notifications: sandbox");

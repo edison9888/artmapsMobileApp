@@ -367,22 +367,6 @@ const NSInteger MEDIA_NOT_FOUND = -1;
 }*/
 
 
-/*-(NSString*)preparePostContent{
-    NSString *postContent = nil;
-    if (self.postCommentsTemplate != NULL){
-        postContent = @"<div id=\"post_template\">";
-        postContent = [postContent stringByAppendingString:self.postCommentsTemplate];
-        postContent = [postContent stringByAppendingString:@"\n"];
-        postContent = [postContent stringByAppendingString:@"<div id=\"post_text\">"];
-        postContent = [postContent stringByAppendingString:textView.text];
-        postContent = [postContent stringByAppendingString:@"</div>"];
-        postContent = [postContent stringByAppendingString:[self getPostMediaHTML]];
-        postContent = [postContent stringByAppendingString:@"</div>"];
-        postContent = [postContent stringByAppendingString:@"</div>"];
-    }
-    return postContent;
-}*/
-
 -(NSString*)preparePostContent{
     NSString *postContent = nil;
     if (self.postCommentsTemplate != NULL){
@@ -394,9 +378,25 @@ const NSInteger MEDIA_NOT_FOUND = -1;
         postContent = [postContent stringByAppendingString:@"</div>"];
         postContent = [postContent stringByAppendingString:[self getPostMediaHTML]];
         postContent = [postContent stringByAppendingString:@"</div>"];
+        postContent = [postContent stringByAppendingString:@"</div>"];
     }
     return postContent;
 }
+
+/*-(NSString*)preparePostContent{
+    NSString *postContent = nil;
+    if (self.postCommentsTemplate != NULL){
+        postContent = @"<div id=\"post_template\">";
+        postContent = [postContent stringByAppendingString:self.postCommentsTemplate];
+        postContent = [postContent stringByAppendingString:@"\n"];
+        postContent = [postContent stringByAppendingString:@"<div id=\"post_text\">"];
+        postContent = [postContent stringByAppendingString:textView.text];
+        postContent = [postContent stringByAppendingString:@"</div>"];
+        postContent = [postContent stringByAppendingString:[self getPostMediaHTML]];
+        postContent = [postContent stringByAppendingString:@"</div>"];
+    }
+    return postContent;
+}*/
 
 
 -(NSString*)getPostMediaHTML{

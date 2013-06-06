@@ -17,6 +17,12 @@
 
 @synthesize imageView;
 @synthesize image;
+@synthesize pinchRecognizer;
+@synthesize panRecognizer;
+
+int mLastScale = 1;
+int mScale;
+int mCurrentScale;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,6 +40,19 @@
     if (self.image != nil ){
         self.imageView.image = [self.image resizedImageWithContentMode:UIViewContentModeScaleAspectFit bounds:self.imageView.frame.size interpolationQuality:kCGInterpolationDefault];
     }
+}
+
+- (void)handlePinchRecognizer:(UIPinchGestureRecognizer *)gestureRecognizer {
+    if ([gestureRecognizer state] == UIGestureRecognizerStateBegan || [gestureRecognizer state] == UIGestureRecognizerStateChanged) {
+        [gestureRecognizer view].transform = CGAffineTransformScale([[gestureRecognizer view] transform], [gestureRecognizer scale], [gestureRecognizer scale]);
+        [gestureRecognizer setScale:1];
+    }
+}
+
+- (void)handlePanRecognizer:(UIPanGestureRecognizer *)dragRecognizer {
+    CGPoint translation = [dragRecognizer translationInView:imageView];
+    imageView.transform = CGAffineTransformTranslate(imageView.transform, translation.x, translation.y);
+    [dragRecognizer setTranslation:CGPointZero inView:imageView];
 }
 
 - (void)viewDidUnload

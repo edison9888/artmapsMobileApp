@@ -331,9 +331,9 @@ const NSInteger DETAIL_OoIMETA_BUTTON_TAG = 1;
         NSIndexPath *pressedIndexPath = [self.tableView indexPathForRowAtPoint:[longPressRecognizer locationInView:self.tableView]];
     }*/
     if ([MapHelper getMapZoomLevel:mapViewControl] < MAX_GOOGLE_ZOOM_LEVEL - 1){
-        CLLocationCoordinate2D centerCoordinate = [(REVClusterPin *)annotationView.annotation coordinate];
-        CLLocationDegrees newLatitudeDelta = mapViewControl.region.span.latitudeDelta/2.0;
-        CLLocationDegrees newLongitudeDelta = mapViewControl.region.span.longitudeDelta/2.0;
+        //CLLocationCoordinate2D centerCoordinate = [(REVClusterPin *)annotationView.annotation coordinate];
+        //CLLocationDegrees newLatitudeDelta = mapViewControl.region.span.latitudeDelta/2.0;
+        //CLLocationDegrees newLongitudeDelta = mapViewControl.region.span.longitudeDelta/2.0;
         
         //MKCoordinateSpan newSpan = MKCoordinateSpanMake(newLatitudeDelta, newLongitudeDelta);
         //MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, newSpan);

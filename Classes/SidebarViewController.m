@@ -33,7 +33,7 @@
 //horizon code
 //#import "HIOoIViewController.h"
 #import "HIPostsViewController.h"
-#import "ExperienceViewController.h"
+//#import "ExperienceViewController.h"
 
 
 // Height for reader/notification/blog cells
@@ -917,8 +917,8 @@
         switch (indexPath.row) {
             //Horizon code
             case kMap:
-                //controllerClass = [HIOoIViewController class];
-                controllerClass = [ExperienceViewController class];
+                controllerClass = [HIOoIViewController class];
+                //controllerClass = [ExperienceViewController class];
                 break;
             case kPost:
                 //Horizon code.
